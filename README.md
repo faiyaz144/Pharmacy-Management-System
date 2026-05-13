@@ -99,3 +99,108 @@ pharmacy-management-system/
 │
 └── database/
     └── pharmacy.sql
+⚙ Installation Guide
+1️⃣ Install XAMPP
+
+Download and install XAMPP:
+
+https://www.apachefriends.org/
+
+2️⃣ Move Project Folder
+
+Move the project folder into:
+
+htdocs/
+
+Example:
+
+C:/xampp/htdocs/pharmacy-management-system
+3️⃣ Start Apache & MySQL
+
+Open XAMPP Control Panel and start:
+
+Apache
+MySQL
+4️⃣ Create Database
+
+Open:
+
+http://localhost/phpmyadmin
+
+Create a database named:
+
+pharmacy
+5️⃣ Import Database
+
+Import:
+
+database/pharmacy.sql
+6️⃣ Configure Database Connection
+
+Open:
+
+php/db.php
+
+Update credentials if needed:
+
+<?php
+
+$conn = mysqli_connect(
+    "localhost",
+    "root",
+    "",
+    "pharmacy"
+);
+
+?>
+▶ Run The Project
+
+Open browser:
+
+http://localhost/pharmacy-management-system
+🔑 Default Admin Login
+Username: admin
+Password: admin123
+📸 Screenshots
+Login Interface
+
+Modern glassmorphism login UI.
+
+Dashboard
+
+Professional pharmacy admin dashboard.
+
+Inventory System
+
+Modern medicine stock management interface.
+
+Billing System
+
+Live invoice generation system with stock sync.
+
+🌟 Future Improvements
+Barcode Scanner Integration
+Email Invoice System
+Supplier Management
+Multi-Admin System
+Sales Analytics Charts
+Dark Mode
+Medicine Image Upload
+Expiry Notifications
+👨‍💻 Author
+
+FAIYAZ
+
+📜 License
+
+This project is for educational purposes.
+
+⭐ Support
+
+If you like this project:
+
+Star the repository
+Fork the project
+Share with others
+
+💊 Happy Coding!
